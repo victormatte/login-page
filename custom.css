@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   margin: 1rem 350px;
+   padding: 5px;
+}
+
+.input-content h1{
+    border-bottom: 2px solid green;
+    margin: 0px 100px 8px 0px;
+    padding-bottom: 8px;
+    color: #fff;
+}
+
+.inputsfield .frstname{
+    padding: 8px;
+    width:250px;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.inputsfield .username, .email{
+    padding: 8px;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    width: 515px;
+    border-style: none;
+}
+
+.field{
+    display: flex;
+}
+
+.passwordfield,
+.passwordfiel{
+    padding: 8px;
+    margin: 0 15px 10px 0;
+    border-radius: 5px;
+    width: 250px;
+    border-style: none;
+    background-color:#fff ;
+    display: flex;
+}
+
+.passwordfield input,
+.passwordfiel input{
+    background-color: transparent;
+    border: none;
+}
+
+.passwordfield i{
+    cursor: pointer;
+    position: absolute;
+    right: 55%;
+}
+
+.passwordfiel i{
+    cursor: pointer;
+    position: absolute;
+    right: 35%;
+}
+
+.inputsfield input:focus-visible {
+    outline:none
+}
+
+.terms{
+    margin-top: 8px;
+}
+
+.terms p{
+    border-bottom: 2px solid green;
+    margin: 0px 100px 8px 0px;
+    padding-bottom: 8px;
+}
+
+.terms button{
+    cursor: pointer;
+}
+
+.terms span{
+    background-color: blue;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button{
+    padding: 8px;
+    width: 250px;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.buttons button:first-child{
+    background-color: blue;
+    color: #fff;
+}
+
+.buttons button:last-of-type{
+    background-color: green;
+    color: #fff;
+}
+
+
+/*@media(max-width:768px){
+    .container{
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .input-content h1{
+        margin: auto;
+    }
+
+    .inputsfield .frstname:first-child{
+        margin-top: 12px;
+    }
+
+    .inputsfield .frstname,
+    .inputsfield .username, .email,
+    .passwordfield,
+    .passwordfiel,
+    .buttons button {
+        width: 100%;
+    }
+
+    .terms p{
+        margin:auto;
+    }
+
+    .passwordfield{
+        margin: 0;
+    }
+
+    .passwordfiel{
+        margin: 0 0 0 10px;
+    }
+
+    .passwordfield i {
+        right: 55px;
+    }
+
+    .buttons button:first-child{
+        margin-top: 12px;
+    }
+}*/
+
+@media(max-width:480px){
+    .container{
+        margin: 60px 15px 0 15px;
+    }
+
+    .inputsfield .frstname,
+    .inputsfield .username, .email,
+    .passwordfield,
+    .passwordfiel,
+    .buttons button {
+        width: 100%;
+    }
+
+    .inputsfield .frstname:first-child{
+        margin-top: 12px;
+    }
+
+    .input-content h1{
+        margin: auto;
+    }
+
+    .field{
+        flex-direction: column;
+    }
+
+    .passwordfiel i,
+    .passwordfield i {
+        right: 30px;
+    }
+
+    .passwordfield,
+    .passwordfiel{
+        margin: auto;
+    }
+
+    .passwordfiel{
+        margin-top: 10px;
+    }
+
+    .terms p{
+        margin:auto;
+        line-height: 26px;
+    }
+
+    .buttons button:first-child{
+        margin-top: 12px;
+    }
+}
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="input-content">
+            <h1>Sign up</h1>
+            <div class="inputsfield">
+                <form action="index1.html" method="get">
+                    <label>
+                        <input type="text" class="frstname" placeholder="Frist Name" required>
+                        <input type="text" class="frstname" placeholder="Last Name" required>
+                    </label>
+                    <label>
+                        <input type="text" name="user" class="username" placeholder="User Name" required>
+                    </label>
+                    <label>
+                        <input type="email" name="email" class="email" placeholder="Email Adress" required>
+                    </label>
+                    <div class="field">
+                        <div class="passwordfield">
+                            <label>
+                                <input type="password" name="password" class="Password" placeholder="Password" required onchange="checkpassword()">
+                                <i class="fa-solid fa-eye" id="icon1"></i>
+                            </label>
+                        </div>
+                        <div class="passwordfiel">
+                            <input type="password" name="confirmpassword" class="Passwordcf" required placeholder="Confirm Password" onchange="checkpassword()">
+                            <i class="fa-solid fa-eye" id="icon"></i>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <p>
+                            <button>I Agree</button>
+                            By clicking <span>Register</span>,you agree
+                            to the <a href="">Terms and Conditions</a>
+                        </p>
+                        <div class="buttons">
+                            <button >Register</button>
+                            <button>Sign in</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
